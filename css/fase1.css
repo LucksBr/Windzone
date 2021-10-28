@@ -1,0 +1,159 @@
+:root {
+    --branco: rgba(250, 250, 250, 1);
+    --azulClaro: rgba(227, 242, 253, 1);
+    --vermelho: rgba(219, 84, 97, 1);
+    --cinza: rgba(93, 87, 107, 1);
+    --violeta: rgba(92, 65, 93, 1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Inconsolata, Consolas, "Courier New", monospace;
+    background-color: var(--branco);
+    font: 62.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: var(--vermelho);
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleCentral{
+    color: #000;
+    font-size: 2.5rem;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+.screen {
+    background-color: black;
+    width: 90vw;
+    height: 30rem;
+    margin: 1rem;
+    color: white;
+}
+
+.screenUpside {
+    width: 100%;
+    height: 9%;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.screenUpside img {
+    background-color: rgb(240, 248, 255);
+    width: 2rem;
+    border-radius: 100%;
+    margin: 1rem;
+    
+}
+
+
+
+
+h2{
+    color: #fff;
+    margin-left: 1rem;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-delay: .9s;
+}
+
+p{
+    margin: 0.5rem;
+    text-indent: 0.5rem;
+    
+    
+}
+
+
+
+#animation{
+  /*  background-color: yellow; */
+    width: 100%;
+    height: 70%;
+    padding-top: 1rem;
+}
+
+#controls {
+    /*background-color: rgb(82, 16, 78); */
+    width: 100%;
+    height: 21%;
+}
+
+ #text1{
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+#text2{
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-delay: 15s;
+    color: rgb(71, 218, 71);
+}
+#text3{
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-delay: 19s;
+    color: rgb(71, 218, 71);
+}
+
+#text4{
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-delay: 23s;
+    color: rgb(71, 218, 71);
+}
+
+
+
+@media(max-width:39rem) {
+    .titleCentral{
+    font-size: 1.6rem;
+    }
+
+    .container button{
+        font-size: 1.6rem;
+        width: 20rem;
+    }
+}
+
+@keyframes slide {
+    to {
+        opacity: 1;
+    }
+}
